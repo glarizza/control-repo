@@ -29,6 +29,6 @@ node default {
   unless empty($trusted['pp_role']) {
     # This is classification based on trusted facts. For more information, see
     # this doc: https://docs.puppet.com/puppet/4.9/ssl_attributes_extensions.html
-    include $trusted['pp_role']  
+    include $trusted['extensions']['pp_role']  
   }
 }
